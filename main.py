@@ -17,6 +17,11 @@ t2 = time.time() - start
 print("cython:\t{0}\t{1}\t{2}".format(t2, res, float(t1/t2)))
 
 start = time.time()
-res = hello.stak(20, 10, 0)
+res = hello.sbtak(20, 10, 0)
 t3 = time.time() - start
 print("cython:\t{0}\t{1}\t{2}".format(t3, res, float(t1/t3)))
+
+start = time.time()
+res = hello.stak(20, 10, 0)
+t4 = time.time() - start
+print("cython:\t{0}\t{1}\t{2}".format(t4, res, float(t1/t4)))
